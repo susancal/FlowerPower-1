@@ -15,13 +15,13 @@ body {
 
 header {
   font-size: 2em;
-  font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:600; font-stretch:normal; - See more at: http://rachaelmoore.name/posts/design/css/web-safe-helvetica-font-stack/#sthash.9e3VMm1s.dpuf;
+  font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:600; font-stretch:normal;
   font-style: italic;
   color: white;
 }
 
 .hydrake {
-  background-color: darkblue;
+  background-color: darkgrey;
   color: white;
   border-radius: 50px;
 }
