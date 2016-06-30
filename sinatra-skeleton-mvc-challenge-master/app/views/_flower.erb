@@ -1,16 +1,16 @@
 <% if current_user.cups.from_n_days_ago(0).length >= 12 %>
     <img src="/images/flow_6.jpg"><br>
     Started from the bottom, now we're here...
-<% elsif current_user.cups.from_n_days_ago(0).length > 10 %>
+<% elsif current_user.cups.from_n_days_ago(0).length >= 10 %>
   <img src="/images/flow_5.jpg"><br>
-<% elsif current_user.cups.from_n_days_ago(0).length > 8 %>
+<% elsif current_user.cups.from_n_days_ago(0).length >= 8 %>
   <img src="/images/flow_4.jpg"><br>
-<% elsif current_user.cups.from_n_days_ago(0).length > 6 %>
+<% elsif current_user.cups.from_n_days_ago(0).length >= 6 %>
   <img src="/images/flow_3.jpg"><br>
-<% elsif current_user.cups.from_n_days_ago(0).length > 4 %>
+<% elsif current_user.cups.from_n_days_ago(0).length >= 4 %>
   <img src="/images/flow_2.jpg"><br>
-<% elsif current_user.cups.from_n_days_ago(0).length > 2 %>
+<% elsif current_user.cups.from_n_days_ago(0).length >= 2 %>
   <img src="/images/flow_1.jpg"><br>
-<% elsif current_user.cups.from_n_days_ago(0).length > 0 %>
+<% elsif current_user.cups.from_n_days_ago(0).length >= 0 %>
   <img src="/images/flow_0.jpg"><br>
 <% end %>
