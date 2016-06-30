@@ -22,6 +22,9 @@ header {
 
 .hydrake {
   background-color: darkgrey;
+
+#button {
+  background-color: darkblue;
   color: white;
   border-radius: 50px;
 }
