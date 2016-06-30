@@ -6,7 +6,7 @@ post '/users/new' do
   @user = User.new(params[:user])
     if @user.save
       session[:user_id] = @user
-      redirect '/'
+      redirect "/users/#{@user.id}"
     else
       erb :"/users/register"
     end
