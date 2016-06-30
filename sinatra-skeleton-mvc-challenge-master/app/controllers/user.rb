@@ -23,7 +23,7 @@ post '/users/login' do
   p @user
   if @user && @user.authenticate(params[:user][:password])
     session[:user_id] = @user.id
-    redirect '/'
+    redirect "/users/#{@user.id}"
   else
     erb :"/users/login"
   end
@@ -32,4 +32,8 @@ end
 get '/users/logout' do
   session[:user_id] = nil
   redirect '/'
+end
+
+get '/users/:user_id' do
+  erb :'/users/profile'
 end
