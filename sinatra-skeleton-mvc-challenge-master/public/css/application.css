@@ -43,3 +43,7 @@ body {
 input {
   color: black;
 }
+
+a:visited {
+  color: darkslategray;
+};
