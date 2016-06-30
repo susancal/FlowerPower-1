@@ -12,6 +12,11 @@ $("#hydrake-button").on('submit', function(event) {
   })
   .done(function(response) {
     console.log(response);
+    // console.log(response.count);
+    // $("#current-count").hide();
+    // $("#current-count").html(response.count);
+    // $("#current-count").show();
+    $("#flower-to-remove").remove();
     $("#flower").html(response);
   })
 
