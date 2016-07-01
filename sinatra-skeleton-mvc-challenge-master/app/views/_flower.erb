@@ -1,5 +1,5 @@
 <% if current_user.cups.from_n_days_ago(0).length >= 12 %>
-    Started from the bottom, now we're here...
+    <div class="above">Started from the bottom, now we're here...</div>
     <img src="/images/flow_6.png"><br>
 <% elsif current_user.cups.from_n_days_ago(0).length >= 10 %>
   <img src="/images/flow_5.png"><br>

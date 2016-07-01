@@ -24,7 +24,7 @@
     <h3 id="slogan">1-800-THIRSTY</h3>
      <div id="nav-bar">
         <% if logged_in? %>
-          Drink some water, <%= current_user.username %>! | <a href="/users/<%= current_user.id %>">Your Water Page</a> | <a href="/">Home</a> | <a href="/users/logout">Logout</a>
+          Drink some water, <%= current_user.username %>!<br><a href="/users/<%= current_user.id %>">Your Water Page</a> | <a href="/">Just Hold On, We're Going Home</a> | <a href="/users/logout">Logout</a>
         <% else %>
           <a href="/users/login">Login</a> | <a href="/users/register">Register</a> | <a href="/">Home</a>
         <% end %>
