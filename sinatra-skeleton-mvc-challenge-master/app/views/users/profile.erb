@@ -1,13 +1,14 @@
 
 <h2>Instructions: drink water to make Drake's flower grow! Click the "Hydrake" button for every 8oz consumed.</h2>
-<p>You should be drinking <%= current_user.recommended_intake %> cups of water each day.</p>
+<p class="cup-count">You should be drinking <%= current_user.recommended_intake %> cups of water each day.</p>
+<p class="cup-count">You have had <div id="current-count"><%= current_user.cups.from_n_days_ago(0).length %></div> cups of water today.</p>
 
 <div id="flower">
   <%= erb :"_flower" %>
 </div>
 
 
-<div id="hydrake-form">
+<div id="hydrake-form-area">
   <form id="hydrake-button" method="post" action="/cups">
     <input id ="droplet" type="submit" value="hydrake">
   </form>
