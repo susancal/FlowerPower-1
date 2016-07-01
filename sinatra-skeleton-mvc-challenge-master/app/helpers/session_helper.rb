@@ -12,4 +12,8 @@ helpers do
     redirect '/login' unless logged_in?
   end
 
+  def picgetter(n)
+    return "/images/flow_#{n}.png"
+  end
+
 end
