@@ -65,6 +65,21 @@ $("#hydrake-button").on('submit', function(event) {
     audioElementLogin.play();
   });
 
+  // make gif background when you click logout
+  $("#logout").on('click', function(event) {
+    event.preventDefault();
+    var url = $(this).attr("href");
+    $("#background-container").css({"background-image":"url(/images/giphy.gif)", "background-repeat": "no-repeat", "background-size": "100%"});
+    // $("#flower").hide();
+    // $(".cup-count").hide();
+    // $("#nav-bar").hide();
+    // $("#hydrake-form-area").hide();
+    // $("#current-count").hide();
+     setTimeout(function() {
+      window.location = url;
+   }, 1700);
+  });
+
 
 
 
