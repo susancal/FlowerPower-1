@@ -35,7 +35,9 @@ $("#hydrake-button").on('submit', function(event) {
   event.preventDefault();
   var route = $(this).attr("action");
   var method = $(this).attr("method");
+  if ($("#current-count") != "11") {
   audioElementYeah.play();
+  }
   $.ajax({
     url: route,
     type: method,
