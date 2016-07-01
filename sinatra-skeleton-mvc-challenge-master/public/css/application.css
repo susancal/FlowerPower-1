@@ -43,3 +43,15 @@ body {
 input {
   color: black;
 }
+
+a {
+  color: darkslategray;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
