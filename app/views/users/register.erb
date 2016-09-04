@@ -1,5 +1,11 @@
 <h2>Register</h2>
 
+<% if @errors %>
+  <% @errors.each do |err| %>
+    <div><%= err %></div>
+  <% end %>
+<% end %>
+
 <div class="register-form">
   <form id="register-new-user" action="/users/new" method="post">
     <input type="text" name="user[email]" placeholder="Email"><br>
