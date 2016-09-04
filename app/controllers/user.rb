@@ -1,5 +1,4 @@
 get '/users/register' do
-  p "hello"
   erb :"/users/register"
 end
 
@@ -20,7 +19,6 @@ end
 
 
 post '/users/login' do
-  p params[:user][:username]
   @user = User.find_by(username: params[:user][:username])
   p @user
   if @user && @user.authenticate(params[:user][:password])
