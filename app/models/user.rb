@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   validates :email, presence: true, uniqueness: true
   validates :username, presence: true, uniqueness: true
   validates :password_hash, presence: true
-  validates :password, presence: true
+  # validates :password, presence: true
   has_many :cups
   validate :password_length
 
@@ -15,8 +15,8 @@ class User < ActiveRecord::Base
   end
 
   def password_length
-    if @original_password && @original_password.length < 4
-      self.errors.add(:password, "must be greater than 4 characters")
+    if @original_password && @original_password.length < 6
+      self.errors.add(:password, "must have at least 6 characters")
     end
   end
 
