@@ -1,4 +1,5 @@
 get '/users/register' do
+  p "hello"
   erb :"/users/register"
 end
 
@@ -26,6 +27,7 @@ post '/users/login' do
     session[:user_id] = @user.id
     redirect "/users/#{@user.id}"
   else
+    @errors = "Username or password is incorrect"
     erb :"/users/login"
   end
 end
