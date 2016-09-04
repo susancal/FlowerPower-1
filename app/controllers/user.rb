@@ -8,6 +8,7 @@ post '/users/new' do
       session[:user_id] = @user
       redirect "/users/#{@user.id}"
     else
+      @errors = @user.errors.full_messages
       erb :"/users/register"
     end
 end
